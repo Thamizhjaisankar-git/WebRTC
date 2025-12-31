@@ -1,4 +1,4 @@
-### Screen Sharing Meeting App – WebRTC
+## Screen Sharing Meeting App – WebRTC
 
 This app allows users to join a meeting using a Meeting ID, share their screen, toggle microphone, send reactions, and leave the meeting — all without any backend or signaling server.
 
