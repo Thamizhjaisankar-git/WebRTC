@@ -1,16 +1,71 @@
-# React + Vite
+### Screen Sharing Meeting App – WebRTC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app allows users to join a meeting using a Meeting ID, share their screen, toggle microphone, send reactions, and leave the meeting — all without any backend or signaling server.
 
-Currently, two official plugins are available:
+## 🛠️ Technology Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React.js – Frontend
+- WebRTC (MediaDevices API) – Screen sharing & microphone access
+- Material UI Icons – Controls & reactions
+- CSS – Layout & styling
 
-## React Compiler
+## 📌 Features
+⭐ Frontend (React + WebRTC)
+- Join meeting using Meeting ID
+- Screen sharing using getDisplayMedia
+- Microphone on/off toggle using getUserMedia
+- Avatar shown when screen sharing is off
+- Live video preview of shared screen
+- Reactions during meeting (Like, Clap, Heart)
+- Leave meeting functionality
+- Clean and minimal meeting UI
+- No backend / No signaling server required
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Installation & Setup
 
-## Expanding the ESLint configuration
+1. Clone the Repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   ```bash
+   git clone https://github.com/Thamizhjaisankar-git/WebRTC.git
+   cd screen-share
+
+2. 🌐 Frontend Setup (React + Tailwind)
+   ```bash
+    npm install
+    npm run dev
+
+
+## 🧠 How It Works (Technical Overview)
+
+- Screen Sharing
+- Uses navigator.mediaDevices.getDisplayMedia()
+- Captures screen video and system audio
+- Microphone Control
+- Uses navigator.mediaDevices.getUserMedia()
+- Dynamically merges audio track with screen video
+- Media Handling
+- Media streams are assigned directly to <video> and <audio> elements
+- Reactions
+- Controlled using React state
+- Icons rendered temporarily on screen
+- Meeting Exit
+- Stops all media tracks and reloads the app
+
+This project does not include real-time peer-to-peer communication or multi-user meetings.
+It focuses on single-user screen sharing simulation using WebRTC APIs.
+
+## 🚀 Future Enhancements
+
+- Real-time multi-user meetings (WebRTC + signaling server)
+- WebSocket or Socket.IO integration
+- Camera on/off support
+- Chat messaging during meetings
+- Recording screen sessions
+- Full Teams / Google Meet–style UI
+- Mobile & tablet support
+
+## 📬 Connect with Me
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/thamizhjaisankar)  
+- 🌐 [Portfolio](https://thamizh-jl.vercel.app/)  
+- ✉️ [Email Me](mailto:thamizhjaisankar@gmail.com)
